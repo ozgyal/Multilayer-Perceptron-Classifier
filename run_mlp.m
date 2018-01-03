@@ -8,7 +8,7 @@ train_set = normalizedTrain;
 test_set = normalizedTest;
 %% Determining the parameters
 
-n = 64; % Number of hidden layers
+n = 64; % Number of hidden neurons
 c = 0.05; % The learning coefficient
 max_epoch = 3000;
 class_no = 40;
