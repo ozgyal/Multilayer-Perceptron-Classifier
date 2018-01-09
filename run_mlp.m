@@ -20,10 +20,10 @@ data_no = 200;
 w1 = random('unif',-0.05,0.05,n,257);
 w2 = random('unif',-0.05,0.05,class_no,n+1);
 
-% Initialize the activation function as bipolar sigmoidal function
+% Initialize the activation function as tanh function
 f = @(v) (1-exp(-v))./(1+exp(-v));
 
-% Initialize the derivative of bipolar sigmoidal function
+% Initialize the derivative of tanh function
 fder = @(v) 0.5 .* ( 1 - f(v).^2 );
 
 % Initialize the desired output(d)
